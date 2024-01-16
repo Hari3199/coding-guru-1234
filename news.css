@@ -1,0 +1,9 @@
+.g_div{
+    display:flex;
+    align-items: baseline;
+    
+}
+.g_div h1{
+    color:rgb(2,63,117);
+    margin-left:100px;
+}
