@@ -1,0 +1,23 @@
+#admission-img{
+    position: relative;
+    width: 100%;
+    background-color:#71BDD5;
+    height: 300px;
+}
+#admission-img>div:first-child{
+width: fit-content;
+position:absolute;
+top: 40%;
+left: 20%;
+}
+#admission-img>div:last-child{
+    position:absolute;
+    left: 45%;
+    top: 40%;
+    z-index: 1;
+    border-radius:40px;
+    }
+    #admission-img>div:last-child>img{
+        /* width:100%; */
+        border-radius:40px;
+        }
