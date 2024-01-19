@@ -1,23 +1,73 @@
-#admission-img{
-    position: relative;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+
+  input,
+  select,
+  textarea {
     width: 100%;
-    background-color:#71BDD5;
-    height: 300px;
-}
-#admission-img>div:first-child{
-width: fit-content;
-position:absolute;
-top: 40%;
-left: 20%;
-}
-#admission-img>div:last-child{
-    position:absolute;
-    left: 45%;
-    top: 40%;
-    z-index: 1;
-    border-radius:40px;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease-in-out;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+
+  button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* Responsive styles */
+  @media only screen and (min-width: 600px) {
+    form {
+      width: 400px;
     }
-    #admission-img>div:last-child>img{
-        /* width:100%; */
-        border-radius:40px;
-        }
+  }
+
+  @media only screen and (min-width: 900px) {
+    form {
+      width: 500px;
+    }
+  }

@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="admissions.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admission Registration Form</title>
+
 </head>
 <body>
-    
-    <div id="admission-img">
-        <div>
-            <h2> ADMISSIONS</h2>
-            <P>There are many variations of passages of <br/> available, but the majority have<br/> suffered atteracted to be sure there isn't <br/>anything embarrassing hidden in the middle of<br/> text.All the lorem</P>
-        </div>
-        <div>
-            <img src="./addmission-images/scholarships-by-iits--iims-and-other-top-institutes-in-2023-022945540-16x9_0.avif"/>
-        </div>
-    </div>
+
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="program">Program of Interest:</label>
+    <input type="text" id="program" name="program" required>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="3" required></textarea>
+
+    <label for="highSchool">High School GPA:</label>
+    <input type="number" id="highSchool" name="highSchool" step="0.01" required>
+
+    <label for="previousEducation">Previous Education:</label>
+    <input type="text" id="previousEducation" name="previousEducation" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
 </body>
 </html>
+
 <script src="admissions.js"></script>
