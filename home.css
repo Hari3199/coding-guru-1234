@@ -240,5 +240,26 @@
   }
   /* principal end */
 
+   /* Media queries for responsiveness */
+   @media all and (max-width: 768px) {
+
+    .cardsofmz,
+    .cardsofmz2,
+    .cardsofmz3,
+    .newCardmz4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Principalmz4 img {
+        width: 200px;
+    }
+
+    .p1mz {
+        text-align: center;
+        font-size: 18px;
+    }
+}
 
 /* muzzmmil ends */
