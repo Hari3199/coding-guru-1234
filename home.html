@@ -167,7 +167,7 @@
         <img class="card-image2"
           src="https://assets-global.website-files.com/5d6cc308a3a53e98c5034d14/63a157660c5c8ee3bb749bfc_Primary.jpg"
           alt="Example Image">
-        <h2 class="card-title">Primary School</h2>
+        <h2 class="card-title2">Primary School</h2>
         <p class="card-description2">Nurturing enthusiastic learners and creative minds to grow socially and
           academically.</p>
         <br>
@@ -335,3 +335,20 @@
 </body>
 
 </html>
+<script>
+  const redirectButtons = document.querySelectorAll('.btn-know-more');
+  redirectButtons.forEach(button => {
+      button.addEventListener('click', () => {
+          const newPageURL = "registation2.html";
+          window.location.href = newPageURL;
+      });
+  });
+
+  const redirectButtons2 = document.querySelectorAll('.btn-know-more2');
+  redirectButtons2.forEach(button => {
+      button.addEventListener('click', () => {
+          const newPageURL = "registation2.html";
+          window.location.href = newPageURL;
+      });
+  });
+</script>
