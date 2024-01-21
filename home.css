@@ -1,8 +1,22 @@
 .logo>img{
-    height: 100px;
-    width: 200px;
-    margin-bottom: 10px;
+    height: 70px;
+    width: 140px;
+    margin: 10px 10px;
     /* border: 1px solid black; */
+}
+
+.links{
+    /* border: 1px solid red; */
+    width:500px;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: #07294d;
+}
+.submit_h{
+    background-color: rgb(205, 163, 101);
+    
 }
 
 /* muzammil start */
