@@ -10,13 +10,6 @@ form.addEventListener("submit", (e) => {
 });
 async function handleSubmit(){
   try {
-    //preventing from form submitting
-
-    // let obj = {
-    //   email:email.value.trim(),
-    //   password:password.trim(),
-    // };
-
     let res = await fetch(`${url}`);
     let data = await res.json();
     console.log(data);
