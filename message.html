@@ -10,38 +10,96 @@
     rel="stylesheet"
   />
     <style>
-        .img2_h{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        /* principal card */
+    .newCardmz4 {
+        display: flex;
+        border-radius: 8px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+        margin: 50px;
+        padding: 20px;
+        background-color: white;
+    }
 
-        }
-        .about_h{
-            width: 80%;
-        }
-        .img_h{
-            width: 140px;
-            height: 70px;
-            margin-left: 10px;
-            /* border: 1px solid red; */
-        }
-        .links_h{
-            margin:auto;
-            /* border: 2px solid; */
-            width: 500px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-        .footer{
-        background-color: #07294d;
+    .card-imagemz4 {
+        width: 15px;
+        height: 15px;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+
+    .Principalmz4 {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .Principalmz4 img {
         width: 100%;
-        }
-        .submit_h{
-            background-color: rgb(205, 163, 101);
-            
-        }
+        height: 55%;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        border: 4px solid #c1e4ff;
+    }
+
+    .card-contentmz4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 20px;
+    }
+
+    .card-titlemz4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .card-descriptionmz4 {
+        font-family: 'Poppins', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+
+        color: rgba(80, 92, 127, 0.7);
+        margin-bottom: 0;
+    }
+
+    .btn-know-moremz4 {
+        background-color: rgb(20, 72, 119);
+        color: #fff;
+        padding: 8px 16px;
+        text-decoration: none;
+        border-radius: 20px;
+        bottom: 5px;
+        margin-top: auto;
+        width: 140px;
+        text-align: center;
+    }
+
+    .btn-know-moremz4:hover {
+        background-color: rgb(65, 173, 238);
+    }
+  /* principal end */
+    .img_h{
+        width: 140px;
+        height: 70px;
+        margin-left: 10px;
+        /* border: 1px solid red; */
+    }
+    .links_h{
+        margin:auto;
+        /* border: 2px solid; */
+        width: 500px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer{
+        background-color: #07294d;
+    }
+    .submit_h{
+        background-color: rgb(205, 163, 101);
+        
+    }
     </style>
 </head>
 <body>
@@ -82,20 +140,39 @@
             
           </div>
         </div>
-      </nav>
-    <div class="img2_h">
-        <img src="About_imgs/img-1.png" alt="" class="about_h">
-        <img src="About_imgs/img-2.png" alt="" class="about_h">
-        <img src="About_imgs/img-3.png" alt="" class="about_h">
-        <img src="About_imgs/img-4.png" alt="" class="about_h">
-        <img src="About_imgs/img-5.png" alt="" class="about_h">
-        <img src="About_imgs/img-6.png" alt="" class="about_h">
-        <img src="About_imgs/img-7.png" alt="" class="about_h">
-        <img src="About_imgs/img-8.png" alt="" class="about_h">
+    </nav>
+
+    <div class="newCardmz4" style="margin-bottom: -20px;margin-top: -20px;">
+        <div class="Principalmz4">
+          <img class="card-imagemz4"
+            src="https://assets-global.website-files.com/5dc3965351595b3357a79a9d/64998aaa0d1a2f85e6566426_dilip-kumar.jpg"
+            alt="Principal Image">
+          <h3 style="color: rgb(53, 148, 207);;">Mr. Dilip Kumar</h3>
+          <p>Principal, GIIS</p>
+        </div>
+        <div class="card-contentmz4">
+          <h2 class="card-titlemz4">Principal’s Message</h2>
+          <p class="card-descriptionmz4">At GIIS, we foster a nurturing learning environment that values and
+            respects each child. We believe in encouraging and developing their unique talents, skills, and
+            interests. Our curriculum with the integration of 9 GEMS, a holistic educational framework inspires
+            active learning through exploration, problem solving, and creativity.</p>
+          <p class="card-descriptionmz4">Welcome to GIIS , where learning is fun, creative, and
+            interdisciplinary.</p>
+        </div>
     </div>
 
-     <!-- footer start -->
-     <footer>
+    <p class="card-descriptionmz4" style="text-align: center; width: 80%; margin: auto;">
+        At GIIS we foster a nurturing learning environment that values and respects each child. We believe in encouraging and developing their unique talents, skills, and interests. Our curriculum with the integration of 9 GEMS, a holistic educational framework inspires active learning through exploration, problem solving, and creativity.
+
+        In our classrooms, we strike a balance between structure and freedom, allowing children to pursue their interests while receiving guidance from teachers. Our comprehensive curriculum focuses on academic, physical, and social development. Led by experienced teachers, our school is dedicated to providing quality education to every student.
+
+        We highly value the partnership with families and encourage their active involvement in their child's education through Parent Connect Programs.Through carefully designed lesson plans and future-focused activities, we inspire young minds to become the leaders of tomorrow. At GIIS we appreciate every child for who they are and support their aspirations.
+
+        Welcome to GIIS where learning is fun, creative, and interdisciplinary.
+      </p>
+
+       <!-- footer start -->
+       <footer>
         <div
         class="container-fluid text-white mt-5 py-5 px-sm-3 px-md-5 footer"
       >
@@ -210,6 +287,6 @@
       </div>
       </footer>
       <!-- footer end -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
