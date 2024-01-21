@@ -21,10 +21,6 @@ Members
   - **GIIS-clone*- deployed link*
   -![Screenshot 2024-01-22 012001](https://github.com/Hari3199/coding-guru-1234/assets/140305265/ba494198-7be0-430f-bbfa-21b056a39492)
   -![Screenshot 2024-01-22 012128](https://github.com/Hari3199/coding-guru-1234/assets/140305265/944cb48b-fb5c-4c1c-a79e-edd4cc86cdeb)
-  -
- 
-
-
   
 - **Body Sections:**
   - Multiple pre-designed body sections for diverse content layouts.
@@ -45,12 +41,6 @@ Members
   - Include essential information about teachers and parants testimonials
   - ![Screenshot 2024-01-22 013803](https://github.com/Hari3199/coding-guru-1234/assets/140305265/963eee47-aeeb-418d-931d-e6142887e372)
 
-**teachers & Testimonials:**
-  - Professionally styled teacher page for a polished website appearance.
-  - Include essential information about teachers and parants testimonials
-  - ![Screenshot 2024-01-22 013803](https://github.com/Hari3199/coding-guru-1234/assets/140305265/963eee47-aeeb-418d-931d-e6142887e372)
-
-
 **Admission Form**
   - Professionally styled admission form for a smooth admission process.
   - Include essential functionality for proper admission process include required details about student and parants 
@@ -60,6 +50,12 @@ Members
   - Professionally styled resources page for a campus details and news.
   - Include essential details about required information and news about school's current topics 
   - ![Screenshot 2024-01-22 014658](https://github.com/Hari3199/coding-guru-1234/assets/140305265/6a8642ac-fd98-407a-8a62-c56efca6b411)
+
+
+**Footer:**
+  - Professionally styled footer for a campus details and quick links.
+  - Include essential details about required information and news about school.
+  - ![Screenshot 2024-01-22 014933](https://github.com/Hari3199/coding-guru-1234/assets/140305265/2cd0dc66-f35d-4a1e-a7c8-0bb72009ae08)
 
 
 
