@@ -4,7 +4,7 @@ function firstCard(){
     gDiv.className = 'g_div';
 
     var h1 = document.createElement('h1');
-    h1.textContent = 'GIIS International School News & Blogs';
+    h1.textContent = 'GIIS International School News & Resources';
 
     gDiv.appendChild(h1);
 
@@ -29,7 +29,7 @@ function firstCard(){
 
 
     h1B.addEventListener('click', function () {
-        window.open('https://example.com/page1'); 
+        window.open('http://127.0.0.1:5500/reason1.html'); 
     });
 
 
@@ -55,7 +55,7 @@ function firstCard(){
     gFirstC.className = 'g_first_c';
 
     var img2 = document.createElement('img');
-    img2.src = 'https://www.ameyaworldschool.in/idea/2017/03/indian-clipart-school-kid-11.jpg';
+    img2.src = 'https://epe.brightspotcdn.com/dims4/default/bc8bcf9/2147483647/strip/true/crop/1690x1147+15+0/resize/840x570!/quality/90/?url=https%3A%2F%2Fepe-brightspot.s3.us-east-1.amazonaws.com%2F2c%2Ffd%2F56918f264baf8dc1d9477ba35935%2Ftechnology-laptops-06212022-1224309929.jpg';
     img2.alt = '';
 
     gFirstC.appendChild(img2);
@@ -67,9 +67,9 @@ function firstCard(){
     h1D.className = 'g_first_d1';
     h1D.textContent = 'The Importance of Technical Knowledge in the Modern World';
 
-    // h1D.addEventListener('click', function () {
-    //     window.open('https://example.com/page2'); // Replace 'https://example.com/page2' with your desired URL
-    // });
+    h1D.addEventListener('click', function () {
+        window.open('http://127.0.0.1:5500/reason2.html');
+    });
 
 
     var pD = document.createElement('p');
@@ -159,3 +159,18 @@ function createLabSection() {
 }
 
 createLabSection();
+
+
+
+let video = document.getElementById("third_1");
+document.body.append(video);
+
+
+let gul_lastEnd=document.getElementById("gul_crslLastPart");
+document.body.append(gul_lastEnd);
+
+
+let gul_footerStart=document.getElementById("footer_gul");
+document.body.append(gul_footerStart);
+
+

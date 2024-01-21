@@ -1,0 +1,57 @@
+body{
+    background-color: rgb(230, 239, 245);
+}
+.reason_1_g{
+    text-align: center;
+    width:1000px;
+    margin: auto;
+    font-family: Poppins, sans-serif;
+    
+}
+.reason_1_g h2{
+    color:rgb(9, 9, 109)
+}
+.reason_1_g h1{
+    color:rgb(15, 15, 174)
+}
+
+.reason_1_img{
+    width:800px;
+    height:450px;
+    border: 5px solid;
+}
+
+.reason_1_title{
+    color:rgb(58, 57, 57);
+    font-family: Poppins, sans-serif;
+    font-weight:bold;
+    font-size: xx-large; 
+}
+
+@media screen and (max-width: 768px) {
+    .reason_1_g{
+        width:368px;
+    }
+    .reason_1_img{
+        width:368px;
+        height:250px;
+        border: 5px solid;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .reason_1_g{
+        width:900px;
+    }
+    .reason_1_img{
+        width:900px;
+        height:250px;
+        border: 5px solid;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
