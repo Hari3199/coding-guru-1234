@@ -26,9 +26,12 @@ async function handleSubmit(){
       }
     });
     if (f.length > 0) {
+      localStorage.setItem("user",JSON.stringify(f));
+      console.log(f[0].id)
       window.location.href = "registation2.html";
     } else {
       window.location.href = "signup.html";
+      alert("your are doing somthing wrong")
     }
   } catch (err) {
     console.log(err);
