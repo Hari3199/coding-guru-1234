@@ -1,15 +1,14 @@
 const form = document.querySelector("form");
-
 const email = document.getElementById("email");
 const password = document.getElementById("password");
 const submit_btn = document.getElementById("submit-btn");
 const url = "https://mock-api-template-j6kc.onrender.com/register";
 const baseurl = `https://mock-api-template-j6kc.onrender.com/`;
-submit_btn.addEventListener("submit", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   handleSubmit();
 });
-async function handleSubmit(e) {
+async function handleSubmit(){
   try {
     //preventing from form submitting
 
@@ -22,12 +21,12 @@ async function handleSubmit(e) {
     let data = await res.json();
     console.log(data);
     let f = data.filter((ele) => {
-      if (ele.email == email.value && ele.password == password) {
+      if (ele.email == email.value.trim() && ele.password == password.value.trim()) {
         return ele;
       }
     });
     if (f.length > 0) {
-      window.location.href = "registaion2.html";
+      window.location.href = "registation2.html";
     } else {
       window.location.href = "signup.html";
     }
