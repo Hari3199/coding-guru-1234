@@ -29,7 +29,8 @@ function firstCard(){
 
 
     h1B.addEventListener('click', function () {
-        window.open('http://127.0.0.1:5500/reason1.html'); 
+        window.open('reason1.html'); 
+        window.location.href = newPageURL;
     });
 
 
@@ -68,7 +69,8 @@ function firstCard(){
     h1D.textContent = 'The Importance of Technical Knowledge in the Modern World';
 
     h1D.addEventListener('click', function () {
-        window.open('http://127.0.0.1:5500/reason2.html');
+        window.open('reason2.html');
+        window.location.href = newPageURL;
     });
 
 
@@ -174,3 +176,10 @@ let gul_footerStart=document.getElementById("footer_gul");
 document.body.append(gul_footerStart);
 
 
+const Enquire = document.querySelectorAll('#Enquire');
+  Enquire.forEach(button => {
+      button.addEventListener('click', () => {
+          const newPageURL = "enquire.html";
+          window.location.href = newPageURL;
+      });
+  });
