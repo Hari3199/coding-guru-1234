@@ -72,6 +72,7 @@ async function handleFormData(e) {
       gender,
       fullname,
       password,
+      level:email=="abc@gmail.com"?"2":"1"
     };
     let res = await fetch(url, {
       method: "POST",
@@ -83,6 +84,7 @@ async function handleFormData(e) {
     let data = await res.json();
     console.log(data, "post");
     alert("successfully sign up");
+    window.location.href="login.html";
   } catch (err) {
     console.log(err);
   }
