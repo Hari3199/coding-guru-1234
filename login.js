@@ -24,7 +24,7 @@ async function handleSubmit(){
       window.location.href = "registation2.html";
     } else {
       window.location.href = "signup.html";
-      alert("your are doing somthing wrong")
+      alert("Please enter valid Email-id or Password")
     }
   } catch (err) {
     console.log(err);
