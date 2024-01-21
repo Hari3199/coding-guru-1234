@@ -1,158 +1,109 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Poppins:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  user-select: none;
+  font-family: 'Poppins',sans-serif;
 }
-.bg-img{
-  background: url('bg.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
+body{
+  background: #1abc9c;
+  overflow: hidden;
 }
-.bg-img:after{
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  height: 100%;
+::selection{
+  background: rgba(26,188,156,0.3);
+}
+.container{
+  max-width: 440px;
+  padding: 0 20px;
+  margin: 170px auto;
+}
+.wrapper{
   width: 100%;
-  background: rgba(0,0,0,0.7);
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
 }
-.content{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 999;
-  text-align: center;
-  padding: 60px 32px;
-  width: 370px;
-  transform: translate(-50%,-50%);
-  background: rgba(255,255,255,0.04);
-  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
-}
-.content header{
-  color: white;
-  font-size: 33px;
+.wrapper .title{
+  height: 90px;
+  background: #16a085;
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
   font-weight: 600;
-  margin: 0 0 35px 0;
-  font-family: 'Montserrat',sans-serif;
-}
-.field{
-  position: relative;
-  height: 45px;
-  width: 100%;
   display: flex;
-  background: rgba(255,255,255,0.94);
+  align-items: center;
+  justify-content: center;
 }
-.field span{
-  color: #222;
-  width: 40px;
-  line-height: 45px;
+.wrapper form{
+  padding: 30px 25px 25px 25px;
 }
-.field input{
+.wrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.wrapper form .row input{
   height: 100%;
   width: 100%;
-  background: transparent;
-  border: none;
   outline: none;
-  color: #222;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
   font-size: 16px;
-  font-family: 'Poppins',sans-serif;
+  transition: all 0.3s ease;
 }
-.space{
-  margin-top: 16px;
+form .row input:focus{
+  border-color: #16a085;
+  box-shadow: inset 0px 0px 2px 2px rgba(26,188,156,0.25);
 }
-.show{
+form .row input::placeholder{
+  color: #999;
+}
+.wrapper form .row i{
   position: absolute;
-  right: 13px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #222;
-  display: none;
-  cursor: pointer;
-  font-family: 'Montserrat',sans-serif;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: #16a085;
+  border: 1px solid #16a085;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.pass-key:valid ~ .show{
-  display: block;
+.wrapper form .pass{
+  margin: -8px 0 20px 0;
 }
-.pass{
-  text-align: left;
-  margin: 10px 0;
-}
-.pass a{
-  color: white;
+.wrapper form .pass a{
+  color: #16a085;
+  font-size: 17px;
   text-decoration: none;
-  font-family: 'Poppins',sans-serif;
 }
-.pass:hover a{
+.wrapper form .pass a:hover{
   text-decoration: underline;
 }
-.field input[type="submit"]{
-  background: #3498db;
-  border: 1px solid #2691d9;
-  color: white;
-  font-size: 18px;
-  letter-spacing: 1px;
-  font-weight: 600;
+.wrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: #16a085;
+  border: 1px solid #16a085;
   cursor: pointer;
-  font-family: 'Montserrat',sans-serif;
 }
-.field input[type="submit"]:hover{
-  background: #2691d9;
+form .button input:hover{
+  background: #12876f;
 }
-.login{
-  color: white;
-  margin: 20px 0;
-  font-family: 'Poppins',sans-serif;
-}
-.links{
-  display: flex;
-  cursor: pointer;
-  color: white;
-  margin: 0 0 20px 0;
-}
-.facebook,.instagram{
-  width: 100%;
-  height: 45px;
-  line-height: 45px;
-  margin-left: 10px;
-}
-.facebook{
-  margin-left: 0;
-  background: #4267B2;
-  border: 1px solid #3e61a8;
-}
-.instagram{
-  background: #E1306C;
-  border: 1px solid #df2060;
-}
-.facebook:hover{
-  background: #3e61a8;
-}
-.instagram:hover{
-  background: #df2060;
-}
-.links i{
+.wrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
   font-size: 17px;
 }
-i span{
-  margin-left: 8px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  font-size: 16px;
-  font-family: 'Poppins',sans-serif;
-}
-.signup{
-  font-size: 15px;
-  color: white;
-  font-family: 'Poppins',sans-serif;
-}
-.signup a{
-  color: #3498db;
+.wrapper form .signup-link a{
+  color: #16a085;
   text-decoration: none;
 }
-.signup a:hover{
+form .signup-link a:hover{
   text-decoration: underline;
 }
