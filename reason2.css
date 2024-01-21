@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(230, 239, 245);
+}
+
+.reason_2_g{
+    text-align: center;
+    width:1000px;
+    margin: auto;
+    font-family: Poppins, sans-serif;
+    
+}
+.reason_2_g h2{
+    color:rgb(9, 9, 109)
+}
+.reason_2_g h1{
+    color:rgb(15, 15, 174)
+}
+
+.gul_para{
+    text-align:left;
+}
+
+
+@media screen and (max-width: 768px) {
+    .reason_2_g{
+        width:368px;
+    }
+    .reason_2_img{
+        width:368px;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .reason_2_g{
+        width:900px;
+    }
+    .reason_2_img{
+        width:900px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+}
