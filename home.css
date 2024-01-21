@@ -48,4 +48,232 @@
     color: rgba(80, 92, 127, 0.7);
 }
 
-/* muzzmmil ens */
+  /* Apply styles to the card */
+  .cardmz,
+  .cardmz2,
+  .cardmz3 {
+      width: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      justify-content: space-between;
+      transition: transform 0.3s;
+      background-color: white;
+  }
+
+  .cardmz::after,
+  .cardmz2::after,
+  .cardmz3::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background-color: #74c5ff;
+      display: none;
+  }
+
+  .cardmz:hover,
+  .cardmz2:hover,
+  .cardmz3:hover {
+      transform: scale(1.05);
+  }
+
+  .cardmz:hover::after {
+      display: block;
+  }
+
+  .cardmz .card-image,
+  .cardmz2 .card-image2,
+  .cardmz3 .card-image3 {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .cardmz .card-contentmz,
+  .cardmz2 .card-contentmz2,
+  .cardmz3 .card-contentmz3 {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+
+  }
+
+  .cardmz .card-title,
+  .cardmz2 .card-title2,
+  .cardmz3 .card-title3 {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 28px;
+      color: #07294d;
+      margin-top: 0;
+      margin-bottom: 10px;
+
+  }
+
+  .cardmz .card-description,
+  .cardmz2 .card-description2,
+  .cardmz3 .card-description3 {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      color: rgba(80, 92, 127, 0.7);
+      margin-bottom: 0;
+  }
+
+  .btn-know-more {
+      background-color: rgb(20, 72, 119);
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 20px;
+      bottom: 5px;
+      margin-top: auto;
+      width: 140px;
+      text-align: center;
+  }
+
+  .btn-know-more2 {
+      background-color: rgb(20, 72, 119);
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 20px;
+      bottom: 5px;
+      margin-top: auto;
+      width: 140px;
+      text-align: center;
+  }
+
+  .btn-know-more:hover,
+  .btn-know-more2:hover {
+      background-color: rgb(65, 173, 238);
+  }
+
+  .cardsofmz2,
+  .cardsofmz3 {
+      background-color: #f0f5f9;
+  }
+
+  .cardsofmz,
+  .cardsofmz2 {
+      display: flex;
+      margin: 60px;
+      /* justify-content: center;
+      align-items: center; */
+  }
+
+  .cardsofmz3 {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 60px;
+  }
+
+
+  /* principal card */
+  .newCardmz4 {
+      display: flex;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 50px;
+      padding: 20px;
+      background-color: white;
+  }
+
+  .card-imagemz4 {
+      width: 15px;
+      height: 10px;
+      border-radius: 8px;
+      margin-right: 20px;
+  }
+
+  .Principalmz4 {
+      text-align: center;
+      padding: 20px;
+  }
+
+  .Principalmz4 img {
+      width: 100%;
+      height: 70%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      border: 4px solid #c1e4ff;
+  }
+
+  .card-contentmz4 {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 20px;
+  }
+
+  .card-titlemz4 {
+      font-size: 24px;
+      margin-bottom: 10px;
+  }
+
+  .card-descriptionmz4 {
+      font-family: 'Poppins', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+
+      color: rgba(80, 92, 127, 0.7);
+      margin-bottom: 0;
+  }
+
+  .btn-know-moremz4 {
+      background-color: rgb(20, 72, 119);
+      color: #fff;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 20px;
+      bottom: 5px;
+      margin-top: auto;
+      width: 140px;
+      text-align: center;
+  }
+
+  .btn-know-moremz4:hover {
+      background-color: rgb(65, 173, 238);
+  }
+  /* principal end */
+
+   /* Media queries for responsiveness */
+   @media all and (max-width: 768px) {
+
+    .cardsofmz,
+    .cardsofmz2,
+    .cardsofmz3,
+    .newCardmz4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Principalmz4 img {
+        width: 200px;
+    }
+
+    .p1mz {
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+/* muzzmmil ends */
