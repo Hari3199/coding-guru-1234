@@ -82,7 +82,7 @@ async function handleFormData(e) {
     });
     let data = await res.json();
     console.log(data, "post");
-    alert("successfully");
+    alert("successfully sign up");
   } catch (err) {
     console.log(err);
   }
