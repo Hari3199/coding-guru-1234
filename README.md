@@ -1,7 +1,7 @@
 # coding-guru-1234
 Members
-1. Chandan Pandey
-2. Gulshaba Parveen
+1. Gulshaba Parveen
+2. Chandan Pandey
 3. Muzammil Raza Khan
 4. Khadim Khan
 5. Haresh Naina
@@ -29,24 +29,37 @@ Members
 - **Body Sections:**
   - Multiple pre-designed body sections for diverse content layouts.
   - Simple integration and customization for different page structures.
-  - *Boat-Lifestyle-clone*
-   ![Screenshot 2024-01-07 205652](https://github.com/Hari3199/innovative-byte-6543/assets/140305265/5176c287-72ff-44cf-bbc4-a6408e8ca9af)
-  - Figma
-   ![Screenshot 2024-01-07 205805](https://github.com/Hari3199/innovative-byte-6543/assets/140305265/479064d2-26de-42e4-a057-0bfcd0ca6fb7)
-
-- **Carousel:**
-  - Interactive image carousel with smooth sliding animations.
-
+  - **GIIS-clone**-
   - Configurable settings for tailored content presentation.
-  - *Boat-Lifestyle-clone*
- ![Screenshot 2024-01-07 210101](https://github.com/Hari3199/innovative-byte-6543/assets/140305265/a0a35e8d-27e9-48de-a06b-2213c8159c8f)
+ - ![Screenshot 2024-01-22 012934](https://github.com/Hari3199/coding-guru-1234/assets/140305265/01209586-b86e-46fe-8a4d-9dcafc623ae2)
+ - ![Screenshot 2024-01-22 013124](https://github.com/Hari3199/coding-guru-1234/assets/140305265/ca213b37-78bd-4a66-b4ed-b46169eb4449)
 
-- **Footer:**
-  - Professionally styled footer for a polished website appearance.
-  - Include essential information and links for a complete user experience.
-  - *Boat-Lifestyle-clone*
- ![Screenshot 2024-01-07 210204](https://github.com/Hari3199/innovative-byte-6543/assets/140305265/b6def8e5-8613-4bd7-92af-d200b4c327dd)
-  - Figma
- ![Screenshot 2024-01-07 210246](https://github.com/Hari3199/innovative-byte-6543/assets/140305265/8277660f-aa16-4e6a-ab0d-97927bd7a5b3)
+
+- **about page:**
+  - Professionally styled about page for a polished website appearance.
+  - Include essential information.
+  - ![Screenshot 2024-01-22 013602](https://github.com/Hari3199/coding-guru-1234/assets/140305265/d55e256c-290d-42a4-99ce-ebb0f8dfe306)
+ 
+**teachers & Testimonials:**
+  - Professionally styled teacher page for a polished website appearance.
+  - Include essential information about teachers and parants testimonials
+  - ![Screenshot 2024-01-22 013803](https://github.com/Hari3199/coding-guru-1234/assets/140305265/963eee47-aeeb-418d-931d-e6142887e372)
+
+**teachers & Testimonials:**
+  - Professionally styled teacher page for a polished website appearance.
+  - Include essential information about teachers and parants testimonials
+  - ![Screenshot 2024-01-22 013803](https://github.com/Hari3199/coding-guru-1234/assets/140305265/963eee47-aeeb-418d-931d-e6142887e372)
+
+
+**Admission Form**
+  - Professionally styled admission form for a smooth admission process.
+  - Include essential functionality for proper admission process include required details about student and parants 
+  - ![Screenshot 2024-01-22 014408](https://github.com/Hari3199/coding-guru-1234/assets/140305265/3c1cd8e8-d754-413a-8a6a-022f592e9580)
+
+**Resources:**
+  - Professionally styled resources page for a campus details and news.
+  - Include essential details about required information and news about school's current topics 
+  - ![Screenshot 2024-01-22 014658](https://github.com/Hari3199/coding-guru-1234/assets/140305265/6a8642ac-fd98-407a-8a62-c56efca6b411)
+
 
 
