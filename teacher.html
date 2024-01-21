@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link rel="stylesheet" href="teacher.css">
+
+    <!-- Bootstrap -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+    rel="stylesheet"
+  />
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html"><img src="GIIS-logo.png" alt="" class="img_h"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse nav_h" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 links_h">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold " aria-current="page" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="#">Teachers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="admissions.html">Admission</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" href="new.html">Resources</a>
+                    </li>
+                </ul>
+                <div class="btn-group  navbar-nav" role="group" aria-label="Button group with nested dropdown">
+                    <button type="button" class="btn btn-secondary" id="Enquire">Enquire Now</button>
+
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-primary dropdown-toggle"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sign-up/Log in
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                            <li><a class="dropdown-item" href="login.html">Log in</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Body section -->
+    <div id="our-teacher">
+        <div id="our-teacher-heading">
+            <h1>Our Teachers</h1>
+            <h3><a href="home.html" style="text-decoration: none;color: aliceblue;">Home</a> / Our Teachers</h3>
+        </div>
+    </div>
+
+    <!-- <div id="our-teacher-card">
+        <h6>OUR TEACHERS</h6>
+        <h1>Meet Our Teachers</h1>
+        <div id="teacher-card-wrapper">
+           
+        </div>
+    </div>   -->
+    <!-- Bootstap -->
+    <section id="team" class="pb-5">
+        <div class="container">
+            <h5 class="section-title h1">Meet Our Teachers</h5>
+            <div class="row">
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip">
+                        <div class="mainflip flip-0">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://themewagon.github.io/kidkinder/img/team-1.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Julia Smith</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Julia Smith</h4>
+                                        <p class="card-text">“I have formed lifelong relationships with many of my
+                                            students. There is no better experience than bumping into a young adult who
+                                            smiles and greets me by name. While I stand there trying to figure out who
+                                            they are, they start regaling me with stories of our experiences
+                                            together—turning over rocks and finding bugs, following animal tracks in the
+                                            snowy field, rolling down the hill, collecting sticks, balancing on a fallen
+                                            tree, or simply sitting together reading a book.”
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://themewagon.github.io/kidkinder/img/team-2.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Jhon Doe</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Jhon Doe</h4>
+                                        <p class="card-text">“I went to a Montessori charter school during my childhood
+                                            that used materials to enhance learning. I enjoyed my teachers and still
+                                            remember how much I loved the environment at that school. The George School
+                                            Children’s Center reminds me of the Montessori school because the children
+                                            learn “hands on” both inside and outside of the classroom. I am excited to
+                                            make a difference in the lives of the children and help them experience
+                                            learning as fun and enjoyable!”
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://themewagon.github.io/kidkinder/img/team-3.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Mollie Ross</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Mollie Ross</h4>
+                                        <p class="card-text">“Working at the George School Children’s Center is
+                                            wonderful. Since I assist in all four classrooms, I enjoy getting to know
+                                            all the children, helping them to learn, and watching them grow throughout
+                                            the year. The beautiful campus offers many opportunities for the children to
+                                            explore and play.”
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://themewagon.github.io/kidkinder/img/team-4.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Donald John</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Donald John</h4>
+                                        <p class="card-text">“Being part of the George School community has been a
+                                            wonderful journey. Playing with and teaching many exciting young children
+                                            (and their families) and working alongside my co-workers has made it a fun
+                                            learning experience. I look forward to our morning walks when we can witness
+                                            each season on our beautiful campus—and see the horses.”
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://s12937.pcdn.co/wp-content/uploads/2021/03/Susy-Lake.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Edna Francis</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.This is basic card with image on top, title, description and
+                                            button.This is basic card with image on top, title, description and button.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+                <!-- Team member -->
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card">
+                                    <div class="card-body text-center">
+                                        <p><img class=" img-fluid"
+                                                src="https://s12937.pcdn.co/wp-content/uploads/2022/02/Dorothy-Semkiw.jpg"
+                                                alt="card image"></p>
+                                        <h4 class="card-title">Sarah Norris</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.</p>
+                                        <a href="https://www.fiverr.com/share/qb8D02" class="btn btn-primary btn-sm"><i
+                                                class="fa fa-plus"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="backside">
+                                <div class="card">
+                                    <div class="card-body text-center mt-4">
+                                        <h4 class="card-title">Sunlimetech</h4>
+                                        <p class="card-text">This is basic card with image on top, title, description
+                                            and button.This is basic card with image on top, title, description and
+                                            button.This is basic card with image on top, title, description and button.
+                                        </p>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-facebook"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-skype"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="social-icon text-xs-center" target="_blank"
+                                                    href="https://www.fiverr.com/share/qb8D02">
+                                                    <i class="fa fa-google"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ./Team member -->
+
+            </div>
+        </div>
+    </section>
+    <!-- Crousal -->
+    <h2 id="testimonial" style="color: #07294d; font-size:40px;">WHAT PARENTS SAY!</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img-box"><img
+                        src="data:image/jpeg;base64,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"
+                        alt=""></div>
+                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam
+                    faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus,
+                    volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
+                <p class="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="https://www.zoho.com/inventory/case-study/images/maxime-loiselle.jpg"
+                        alt=""></div>
+                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor,
+                    varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante.
+                    Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
+                <p class="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img-box"><img src="https://www.novapharma.com/wp-content/uploads/Testimonial-pic.jpg"
+                        alt=""></div>
+                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi
+                    suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis.
+                    Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.
+                </p>
+                <p class="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+                <div class="star-rating">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel controls -->
+        <!-- <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a> -->
+    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid text-white mt-5 py-5 px-sm-3 px-md-5 footer">
+            <div class="row pt-5">
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0"
+                        style="font-size: 40px; line-height: 40px">
+                        <i class="flaticon-043-teddy-bear"></i>
+                        <img src="https://assets-global.website-files.com/5d9dd319ad4a3a4fa1cf1be6/6018178bedd3886dd95fc119_logo-footer.jpg"
+                            alt="logo">
+                    </a>
+                    <p>
+                        Member of Global Schools Foundation.
+                        CBSE affiliation number : 123456.<br>
+                        School affiliation number : 78960.
+                    </p>
+
+
+                    <div class="d-flex justify-content-start gap-2 mt-4">
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                            style="width: 38px; height: 38px" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                            style="width: 38px; height: 38px" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                            style="width: 38px; height: 38px" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                            style="width: 38px; height: 38px" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Get In Touch</h3>
+                    <div class="d-flex">
+                        <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">Address</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore, officiis repellat.
+                                Nisi maxime numquam architecto est molestiae. </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-envelope text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">Email</h5>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <h4 class="fa fa-phone-alt text-primary"></h4>
+                        <div class="pl-3">
+                            <h5 class="text-white">Phone</h5>
+                            <p>+012 345 67890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-5">
+                    <h3 class="text-primary mb-4">Quick Links</h3>
+                    <div class="d-flex flex-column justify-content-start">
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Classes</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Teachers</a>
+                        <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Resorces</a>
+                    </div>
+                </div>
+
+                <div id="input_h" class="col-lg-3 col-md-6 mb-5">
+                    <h4 class="text-primary">Subscribe to our Newsletter</h4>
+                    <div>
+                        <input id="email" name="email" required="" placeholder="Your Email" type="email"
+                            class="hs-input invalid error email_h" inputmode="email" autocomplete="email" value="">
+
+                        <input type="submit" class="hs-button primar medium submit_h" value="Subscribe Now">
+                    </div>
+
+                </div>
+            </div>
+            <div class="container-fluid pt-5" style="border-top: 1px solid rgba(46, 25, 140, 0.2) ;">
+                <p class="m-0 text-center text-white">
+                    &copy;
+                    <a class="text-primary font-weight-bold" href="#">Coding-guru-1234</a>.
+                    All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script>
+    const Enquire = document.querySelectorAll('#Enquire');
+  Enquire.forEach(button => {
+      button.addEventListener('click', () => {
+          const newPageURL = "enquire.html";
+          window.location.href = newPageURL;
+      });
+  });
+</script>
