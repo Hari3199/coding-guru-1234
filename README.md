@@ -50,6 +50,8 @@ Members
   - Professionally styled resources page for a campus details and news.
   - Include essential details about required information and news about school's current topics 
   - ![Screenshot 2024-01-22 014658](https://github.com/Hari3199/coding-guru-1234/assets/140305265/6a8642ac-fd98-407a-8a62-c56efca6b411)
+  - ![Screenshot 2024-01-22 015304](https://github.com/Hari3199/coding-guru-1234/assets/140305265/cd07deb6-a1be-4879-b6a6-824f371b99fe)
+
 
 
 **Footer:**
