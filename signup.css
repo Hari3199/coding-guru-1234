@@ -13,7 +13,7 @@ body {
   justify-content: center;
   padding: 0 10px;
   min-height: 100vh;
-  background: #1BB295;
+  background: rgb(141, 197, 216);
 }
 
 form {
@@ -29,6 +29,7 @@ form h2 {
   font-size: 27px;
   text-align: center;
   margin: 0px 0 30px;
+  color: #07294d;
 }
 
 form .form-group {
@@ -99,7 +100,8 @@ form .password i {
   cursor: pointer;
   font-weight: 500;
   text-align: center;
-  background: #1BB295;
+  background: 
+  #07294d;
   transition: 0.2s ease;
 }
 
