@@ -46,7 +46,7 @@ async function handleSubmit(){
          parents_email:parents_email.value.trim(),
          parents_phone:parents_phone.value.trim()
         }
-        if(!user[0].id){
+        if(user.length<1){
             alert("please login !")
              window.location.href="login.html";
              return;
