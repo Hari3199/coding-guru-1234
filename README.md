@@ -10,7 +10,7 @@ Members
    
 
 # project- 
-*GIIS-clone*- deployed link
+*GIIS-clone*- https://65ae2b32f147bb07615d1a9b--nimble-horse-536b38.netlify.app/
 
 ## Installation
 1. Clone the repository
