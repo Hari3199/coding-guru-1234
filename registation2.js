@@ -26,6 +26,11 @@ form.addEventListener("submit",(e)=>{
 async function handleSubmit(){
     try{
         // let parents =user[0].id?user[0].id:"";
+        if(user.length<1){
+            alert("please login !")
+             window.location.href="login.html";
+             return;
+        }
         let obj ={
          parentsId:user[0].id||"",
          father_name:father_name.value.trim(),
@@ -46,7 +51,8 @@ async function handleSubmit(){
          parents_email:parents_email.value.trim(),
          parents_phone:parents_phone.value.trim()
         }
-        fetchStudents();
+    
+        fetchStudents(adharNumber);
      let  res = await fetch(`${url2}`,{
         method:"POST",
         headers:{
@@ -66,12 +72,12 @@ console.log(err)
        
         // allInput = form.querySelectorAll(".first input");
    
-     async function fetchStudents(){
+     async function fetchStudents(adharNumber){
         try{
         let res = await fetch(url2);
         let data  = await res.json();
         let f= data.filter((ele)=>{
-            if(ele.adharNumber==adharNumber.value.trim()){
+            if(ele.adharNumber.trim()==adharNumber.value.trim()){
                 return ele;
             }
         })
