@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        section {
+            margin: 20px;
+        }
+
+        table {
+            width:100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            overflow-x:auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #dee2e6;
+            padding: 12px;
+            text-align: left;
+            padding-left: 1px;
+            padding-right: 1px;
+        }
+
+        th {
+            background-color: #495057;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        th:hover {
+            background-color: #343a40;
+        }
+
+        form {
+            margin-top: 20px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            gap: 10px;
+
+        }
+
+        form label {
+            /* display: block; */
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #495057;
+        }
+
+        form input, form textarea, form select {
+            /* width: 100%; */
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        form button {
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 18px;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+
+        button.edit, button.delete {
+            padding: 8px 12px;
+            margin-right: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button.edit {
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+        }
+
+        button.delete {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+        }
+
+        button.edit:hover, button.delete:hover {
+            opacity: 0.8;
+        }
+
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        .search-container input {
+            width: 80%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .search-container button {
+            width: 18%;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        .search-container button:hover {
+            background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 600px) {
+            table {
+                overflow-x: auto;
+            }
+
+            th, td {
+                white-space: nowrap;
+            }
+
+            form input, form textarea, form select {
+                width: 100%;
+            }
+        }
+
+        /* Additional Styles for Attractiveness */
+        h1 {
+            margin: 0;
+        }
+
+        button {
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        form {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        table th, table td {
+            transition: background-color 0.3s ease;
+        }
+
+        table th:hover, table td:hover {
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Admin Dashboard</h1>
+</header>
+
+<section>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search...">
+        <button type="button" onclick="searchItems()">Search</button>
+    </div>
+
+    <form id="crudForm">
+        <input  type="hidden" id="itemId">
+    
+        <label for="father_name">father Name:</label>
+        <input type="text" id="father_name" required>
+
+        <label for="mother_name">mother Name:</label>
+        <input type="text" id="mother_name" required>
+         
+        <label for="first_name">first Name:</label>
+        <input type="text" id="first_name" required>
+
+        <label for="last_name">last Name:</label>
+        <input type="text" id="last_name" required>
+
+        <label for="dateOfbirth">dateOfbirth:</label>
+        <input type="text" id="dateOfbirth" required>
+
+        <label for="adharNumber">adharNumber</label>
+        <textarea id="adharNumber" rows="4"></textarea>
+
+        <label for="class_name">class Name:</label>
+        <input type="text" id="class_name" required>
+
+        <label for="admission_year">admission_year:</label>
+        <input type="text" id="admission_year" required>
+
+        <label for="address">address :</label>
+        <input type="text" id="address" required>
+
+        <label for="nationality">nationality:</label>
+        <input type="text" id="nationality" required>
+
+        <label for="state">state :</label>
+        <input type="text" id="state" required>
+
+        <label for="district">district :</label>
+        <input type="text" id="district" required>
+
+        <label for="block_number">block_number:</label>
+        <input type="text" id="block_number" required>
+
+        <label for="word_number">word_number :</label>
+        <input type="text" id="word_number" required>
+
+        <label for="parents_email">parents_email:</label>
+        <input type="text" id="parents_email" required>
+        <label for="parents_phone">parents_phone:</label>
+        <input type="text" id="parents_phone" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <label for="gender">class_name:</label>
+        <select id="class_name">
+            <option value="class_1">class_1</option>
+            <option value="class_2">class_2</option>
+            <option value="class_3">class_3</option>
+        </select>
+
+        <label for="id">ID:</label>
+        <input type="text" id="id">
+
+        <button type="button" onclick="saveItem()">Save Item</button>
+        <button type="button" onclick="addItem()">add Item</button>
+        <button type="button" onclick="clearForm()">Clear Form</button>
+    </form>
+
+    <table id="itemTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">father_name</th>
+                <th onclick="sortTable(1)">mother_name</th>
+                <th onclick="sortTable(2)">first_name</th>
+                <th onclick="sortTable(3)">last_name</th>
+                <th onclick="sortTable(4)">dateOfbirth</th>
+                <th>adharNumber</th>
+                <th>gender</th>
+                <th>class_name</th>
+                <th>admission_year</th>
+                <th>address</th>
+                <th>nationality</th>
+                <th>state</th>
+                <th>district</th>
+                <th>block_number</th>
+                <th>word_number</th>
+                <th>parents_email</th>
+                <th>parents_phone</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <!-- Table rows will be dynamically populated here -->
+        </tbody>
+    </table>
+</section>
+
+<script>
+    let items = [
+       
+        {
+               parentsId:"1",
+         father_name:"father_name",
+         mother_name:"mother_name",
+         first_name:"first_name",
+         last_name:"last_name",
+         dateOfbirth:"dateOfbirth",
+         adharNumber:"12345",
+         gender:"gender",
+         class_name:"class_name",
+         admission_year:"admission_year",
+         address:"address",
+         nationality:"nationality",
+         state:"state",
+         district:"district",
+         block_number:"block_number",
+         word_number:"word_number",
+         parents_email:"parents_email",
+         parents_phone:"parents_phone"
+        },
+        {
+               parentsId:"2",
+         father_name:"father_name",
+         mother_name:"mother_name",
+         first_name:"first_name",
+         last_name:"last_name",
+         dateOfbirth:"dateOfbirth",
+         adharNumber:"12345",
+         gender:"gender",
+         class_name:"class_name",
+         admission_year:"admission_year",
+         address:"address",
+         nationality:"nationality",
+         state:"state",
+         district:"district",
+         block_number:"block_number",
+         word_number:"word_number",
+         parents_email:"parents_email",
+         parents_phone:"parents_phone"
+        },
+        {
+               parentsId:"3",
+         father_name:"father_name",
+         mother_name:"mother_name",
+         first_name:"first_name",
+         last_name:"last_name",
+         dateOfbirth:"dateOfbirth",
+         adharNumber:"12345",
+         gender:"gender",
+         class_name:"class_name",
+         admission_year:"admission_year",
+         address:"address",
+         nationality:"nationality",
+         state:"state",
+         district:"district",
+         block_number:"block_number",
+         word_number:"word_number",
+         parents_email:"parents_email",
+         parents_phone:"parents_phone"
+        },
+        {
+               parentsId:"4",
+         father_name:"father_name",
+         mother_name:"mother_name",
+         first_name:"first_name",
+         last_name:"last_name",
+         dateOfbirth:"dateOfbirth",
+         adharNumber:"12345",
+         gender:"gender",
+         class_name:"class_name",
+         admission_year:"admission_year",
+         address:"address",
+         nationality:"nationality",
+         state:"state",
+         district:"district",
+         block_number:"block_number",
+         word_number:"word_number",
+         parents_email:"parents_email",
+         parents_phone:"parents_phone"
+        },
+        {
+               parentsId:"4",
+         father_name:"father_name",
+         mother_name:"mother_name",
+         first_name:"first_name",
+         last_name:"last_name",
+         dateOfbirth:"dateOfbirth",
+         adharNumber:"12345",
+         gender:"gender",
+         class_name:"class_name",
+         admission_year:"admission_year",
+         address:"address",
+         nationality:"nationality",
+         state:"state",
+         district:"district",
+         block_number:"block_number",
+         word_number:"word_number",
+         parents_email:"parents_email",
+         parents_phone:"parents_phone"
+        }
+        // Add more data as needed
+    ];
+
+   async function addItem() {
+        // const itemName = document.getElementById('itemName').value;
+        // const itemDescription = document.getElementById('itemDescription').value;
+        // const gender = document.getElementById('gender').value;
+        // const itemId = document.getElementById('id').value;
+        try{
+      let father_name=  document.getElementById('father_name').value.trim() ;
+      let mother_name=      document.getElementById('mother_name').value.trim() ;
+       let first_name=     document.getElementById('first_name').value.trim() ;
+        let gender=   document.getElementById('gender').value.trim() ;
+         let id=     document.getElementById('id').value.trim() ;
+         let last_name=   document.getElementById('last_name').value.trim();
+        let dateOfbirth=    document.getElementById('dateOfbirth').value.trim() ;
+        let adharNumber=    document.getElementById('adharNumber').value.trim();
+        let class_name=   document.getElementById('class_name').value.trim() ;
+        let admission_year=    document.getElementById('admission_year').value.trim();
+        let address=    document.getElementById('address').value.trim();
+        let nationality=    document.getElementById('nationality').value.trim() ;
+        let state=    document.getElementById('state').value.trim() ;
+        let district=    document.getElementById('district').value.trim();
+        let block_number=    document.getElementById('block_number').value.trim();
+        let word_number=   document.getElementById('word_number').value.trim();
+        let parents_email=    document.getElementById('parents_email').value.trim();
+       let parents_phone=     document.getElementById('parents_phone').value.trim() ;
+
+        const newItem = {
+            id,
+            father_name,
+            mother_name,
+            father_name,
+            last_name,
+            gender,
+            dateOfbirth,
+            adharNumber,
+            class_name,
+            admission_year,
+            address,
+            nationality,
+            state,
+            district,
+            block_number,
+            word_number,
+            parents_email,
+            parents_phone
+        };
+        let res = await fetch(`https://mock-api-template-j6kc.onrender.com/students`,{
+            method:'POST',
+            headers:{
+                'Content-type':'application/json'
+            },
+            body:JSON.stringify(newItem)
+        });
+        let data = await res.json();
+        console.log(data,"post")
+        fetchData()
+    }catch(err){
+        console.log(err)
+    }
+        // items.push(newItem);
+        // updateTable();
+        // clearForm();
+    }
+
+    function updateItem() {
+        const itemId = parseInt(document.getElementById('itemId').value);
+        const itemName = document.getElementById('itemName').value;
+        const itemDescription = document.getElementById('itemDescription').value;
+        const gender = document.getElementById('gender').value;
+        const itemIdInput = document.getElementById('id').value;
+
+        const itemIndex = items.findIndex(item => item.id === itemId);
+
+        if (itemIndex !== -1) {
+            items[itemIndex].name = itemName;
+            items[itemIndex].description = itemDescription;
+            items[itemIndex].gender = gender;
+            items[itemIndex].itemId = itemIdInput;
+
+            updateTable();
+            clearForm();
+        }
+    }
+
+   async function saveItem() {
+        // const itemId = document.getElementById('itemId').value;
+        // if (itemId) {
+        //     updateItem();
+        // } else {
+        //     addItem();
+        // }
+        try{
+            let father_name=  document.getElementById('father_name').value.trim() ;
+      let mother_name=      document.getElementById('mother_name').value.trim() ;
+       let first_name=     document.getElementById('first_name').value.trim() ;
+        let gender=   document.getElementById('gender').value.trim() ;
+         let id=     document.getElementById('id').value.trim() ;
+         let last_name=   document.getElementById('last_name').value.trim();
+        let dateOfbirth=    document.getElementById('dateOfbirth').value.trim() ;
+        let adharNumber=    document.getElementById('adharNumber').value.trim();
+        let class_name=   document.getElementById('class_name').value.trim() ;
+        let admission_year=    document.getElementById('admission_year').value.trim();
+        let address=    document.getElementById('address').value.trim();
+        let nationality=    document.getElementById('nationality').value.trim() ;
+        let state=    document.getElementById('state').value.trim() ;
+        let district=    document.getElementById('district').value.trim();
+        let block_number=    document.getElementById('block_number').value.trim();
+        let word_number=   document.getElementById('word_number').value.trim();
+        let parents_email=    document.getElementById('parents_email').value.trim();
+       let parents_phone=     document.getElementById('parents_phone').value.trim() ;
+
+        const newItem = {
+            father_name,
+            mother_name,
+            father_name,
+            last_name,
+            gender,
+            dateOfbirth,
+            adharNumber,
+            class_name,
+            admission_year,
+            address,
+            nationality,
+            state,
+            district,
+            block_number,
+            word_number,
+            parents_email,
+            parents_phone
+        };
+
+        let res = await fetch(`https://mock-api-template-j6kc.onrender.com/students/${id}`,{
+              method:'PATCH',
+              headers:{
+                'Content-type':"application"
+              },
+              body:JSON.stringify(newItem)
+            });
+            let data = await res.json();
+            console.log(data);
+            fetchData();
+        }catch(err){
+            console.log(err);
+        }
+    }
+
+    function deleteItem(itemId) {
+        items = items.filter(item => item.id !== itemId);
+        updateTable();
+    }
+
+    function editItem(item) {
+        // const item = items.find(item => item.id === itemId);
+        // if (item) {
+        // }   
+        
+            document.getElementById('father_name').value = item.father_name;
+            document.getElementById('mother_name').value = item.mother_name;
+            document.getElementById('first_name').value = item.first_name;
+            document.getElementById('gender').value = item.gender;
+             document.getElementById('id').value = item.id;
+            document.getElementById('last_name').value = item.last_name;
+            document.getElementById('dateOfbirth').value = item.dateOfbirth;
+            document.getElementById('adharNumber').value = item.adharNumber;
+            document.getElementById('class_name').value = item.class_name;
+            document.getElementById('admission_year').value = item.admission_year;
+            document.getElementById('address').value = item.address;
+            document.getElementById('nationality').value = item.nationality;
+            document.getElementById('state').value = item.state;
+            document.getElementById('district').value = item.district;
+            document.getElementById('block_number').value = item.block_number;
+            document.getElementById('word_number').value = item.word_number;
+            document.getElementById('parents_email').value = item.parents_email;
+            document.getElementById('parents_phone').value = item.parents_phone;
+           
+    }
+
+    function updateTable(itemss=items) {
+        const tableBody = document.getElementById('tableBody');
+        tableBody.innerHTML="";
+
+        // parentsId:user[0].id||"",
+        //  father_name:father_name.value.trim(),
+        //  mother_name:mother_name.value.trim(),
+        //  first_name:first_name.value.trim(),
+        //  last_name:last_name.value.trim(),
+        //  dateOfbirth:dateOfbirth.value.trim(),
+        //  adharNumber:adharNumber.value.trim(),
+        //  gender:gender.value.trim(),
+        //  class_name:class_name.value.trim(),
+        //  admission_year:admission_year.value.trim(),
+        //  address:address.value.trim(),
+        //  nationality:nationality.value.trim(),
+        //  state:state.value.trim(),
+        //  district:district.value.trim(),
+        //  block_number:block_number.value.trim(),
+        //  word_number:word_number.value.trim(),
+        //  parents_email:parents_email.value.trim(),
+        //  parents_phone:parents_phone.value.trim()
+
+        itemss.forEach(item => {
+            const row = document.createElement("tr");
+            const td1  = document.createElement("td");
+                  td1.innerText= item.father_name;
+            const td2  = document.createElement("td");
+                  td2.innerText = item.mother_name;
+            const td3  = document.createElement("td");
+                 td3.innerText= item.first_name;
+            const td4  = document.createElement("td");
+                 td4.innerText= item.last_name;
+            const td5  = document.createElement("td");
+            td5.innerText= item.dateOfbirth;
+            const td6  = document.createElement("td");
+            td6.innerText= item.adharNumber;
+            const td7  = document.createElement("td");
+            td7.innerText= item.gender;
+            const td8  = document.createElement("td");
+            td8.innerText= item.class_name;
+            const td9  = document.createElement("td");
+            td9.innerText= item.admission_year;
+            const td10  = document.createElement("td");
+            td10.innerText= item.address;
+            const td11  = document.createElement("td");
+            td11.innerText= item.nationality;
+            const td12 = document.createElement("td");
+            td12.innerText= item.state;
+            const td13 = document.createElement("td");
+            td13.innerText= item.district;
+            const td14 = document.createElement("td");
+            td14.innerText= item.block_number;
+            const td15 = document.createElement("td");
+            td15.innerText= item.word_number;
+            const td16 = document.createElement("td");
+            td16.innerText= item.parents_email;
+            const td17 = document.createElement("td");
+            td17.innerText= item.parents_phone;
+            const td18  = document.createElement("td");
+            const editButton = document.createElement('button');
+            editButton.textContent = 'Edit';
+            editButton.className = 'edit';
+            editButton.onclick = () => editItem(item);
+            td18.append(editButton)
+            
+            const td19  = document.createElement("td");
+            const deleteButton = document.createElement('button');
+            deleteButton.textContent = 'Delete';
+            deleteButton.className = 'delete';
+            deleteButton.onclick = () => deleteItem(item);
+            td19.append(deleteButton);
+            row.append(td1,td2,td3,td4,td5,td6,td7,td8,td9,td10,td11,td12,td13,td14,td15,td16,td17,td18,td19);
+            tableBody.append(row)
+           
+        });
+    }
+
+    function clearForm() {
+        document.getElementById('crudForm').reset();
+        document.getElementById('itemId').value = '';
+    }
+
+    function sortTable(columnIndex) {
+        items.sort((a, b) => {
+            const keyA = Object.values(a)[columnIndex];
+            const keyB = Object.values(b)[columnIndex];
+            return keyA.localeCompare(keyB, undefined, { numeric: true, sensitivity: 'base' });
+        });
+
+        updateTable();
+    }
+
+    function searchItems() {
+        const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+
+        if (searchTerm.trim() === '') {
+            updateTable();
+            return;
+        }
+
+        const filteredItems = items.filter(item =>
+            Object.values(item).some(value => value.toString().toLowerCase().includes(searchTerm))
+        );
+
+        updateTable(filteredItems);
+    }
+
+    // updateTable();
+
+
+    async function fetchData(){
+        try{
+        let res = await fetch(`https://mock-api-template-j6kc.onrender.com/students`);
+        let data = await res.json();
+        data = data?data:items;
+        updateTable(data)
+        console.log(data);
+        }catch(err){
+            console.log(err)
+        }
+    }
+    fetchData();
+</script>
+
+</body>
+</html>
