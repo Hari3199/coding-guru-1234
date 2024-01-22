@@ -30,7 +30,7 @@ async function handleSubmit(){
             alert("please login !")
              window.location.href="login.html";
              return;
-        }else{
+        }
         let obj ={
          parentsId:user[0].id||"",
          father_name:father_name.value.trim(),
@@ -51,7 +51,7 @@ async function handleSubmit(){
          parents_email:parents_email.value.trim(),
          parents_phone:parents_phone.value.trim()
         }
-    }
+    
         fetchStudents(adharNumber);
      let  res = await fetch(`${url2}`,{
         method:"POST",
