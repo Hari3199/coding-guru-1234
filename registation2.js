@@ -46,7 +46,13 @@ async function handleSubmit(){
          parents_email:parents_email.value.trim(),
          parents_phone:parents_phone.value.trim()
         }
+        if(!user[0].id){
+            alert("please login !")
+             window.location.href="login.html";
+             return;
+        }
         fetchStudents();
+
      let  res = await fetch(`${url2}`,{
         method:"POST",
         headers:{
@@ -57,7 +63,7 @@ async function handleSubmit(){
      let data = await  res.json();
      console.log(data)
      alert("your admission form accepted");
-      window.location.href="home.html";
+      window.location.href="index.html";
     }catch(err){
 console.log(err)
     }
