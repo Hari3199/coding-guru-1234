@@ -9,7 +9,9 @@ Members
 5. Haresh Naina
    
 
-# project- 
+# project-Description-
+The project aims to design and develop a comprehensive website for a school that facilitates seamless communication, enhances engagement, and provides easy access to educational resources for students, parents, teachers, and administrators.
+
 *GIIS-clone*- https://coding-guru-1234.netlify.app/
 
 ## Installation
